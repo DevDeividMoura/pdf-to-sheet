@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF2Sheet</title>
+    <link rel="shortcut icon" href="{{ url_for('static', path='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://bulma.io/assets/css/website.min.css?v=202404301313">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img width="30" src="{{ url_for('static', path='logo.png') }}" alt="PDF2Sheet"> 
+                    <strong class="logo ml-3">PDF to Sheet</strong>
+                </a>
+            </div>
+
+
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <div class="bd-nav-themes">
+                                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                                        <div class="bd-cycles">
+                                            <div class="bd-cycle-sun">
+                                                <span class="icon">
+                                                    <i class="fas fa-lg fa-sun" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+
+                                            <div class="bd-cycle-moon">
+                                                <span class="icon">
+                                                    <i class="fas fa-lg fa-moon" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                                            <span class="icon">
+                                                <i class="fas fa-sun" aria-hidden="true"></i>
+                                            </span>
+                                            <span>Light</span>
+                                        </button>
+
+                                        <button data-scheme="dark" class="bd-nav-item is-moon is-active"
+                                            aria-label="Dark mode">
+                                            <span class="icon">
+                                                <i class="fas fa-moon" aria-hidden="true"></i>
+                                            </span>
+                                            <span>Dark</span>
+                                        </button>
+
+                                        <button data-scheme="system" class="bd-nav-item is-system"
+                                            aria-label="System mode">
+                                            <span class="icon">
+                                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                                            </span>
+                                            <span>System</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="control">
+                                <a class="bd-tw-button button" target="_blank"
+                                    href="https://github.com/DevDeividMoura/pdf-to-sheet">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span> GitHub </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="box">
+            <div class="field is-grouped is-grouped-centered ">
+                <div class="control">
+                    <div class="file has-name">
+                        <label class="file-label">
+                            <input class="file-input" type="file" id="fileInput" accept="application/pdf"
+                                onchange="updateFileName()" />
+                            <span class="file-cta">
+                                <span class="file-icon">
+                                    <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label"> Escolha um arquivo… </span>
+                            </span>
+                            <span class="file-name" id="fileName"> Nenhum arquivo selecionado... </span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <p class="control">
+                    <button class="button is-primary" onclick=uploadFile()>Processar</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="box" id="tableBox">
+            <div id="result">
+
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>PDF to Sheet</strong> by <a href="https://github.com/DevDeividMoura">Deivid Carvalho Moura</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', path='main.js') }}"></script>
+    <script src="{{ url_for('static', path='temas.js') }}"></script>
+</body>
+
+</html>
