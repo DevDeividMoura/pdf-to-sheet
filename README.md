@@ -23,7 +23,7 @@
   - [Como Usar](#🤖-como-usar)
 - [Roadmap](#🏎️💨-roadmap)
 - [Contribuindo](#🔰-contribuindo)
-- [Licença](#licença)
+- [Licença](#🎗-licença)
 
 ---
 
@@ -165,7 +165,7 @@ Execute pdf-to-sheet usando o seguinte comando no `terminal`:
 </p>
 
 ---
-## Licença
+## 🎗 Licença
 
 Lançado sob a [Licença MIT](LICENSE).
 
