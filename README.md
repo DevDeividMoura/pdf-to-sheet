@@ -24,7 +24,6 @@
 - [Roadmap](#🏎️💨-roadmap)
 - [Contribuindo](#🔰-contribuindo)
 - [Licença](#licença)
-- [Agradecimentos](#agradecimentos)
 
 ---
 
