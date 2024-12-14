@@ -1,8 +1,8 @@
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/DevDeividMoura/pdf-to-sheet/refs/heads/main/src/static/logo.png" align="center" width="10%">
+    <img src="https://raw.githubusercontent.com/DevDeividMoura/pdf-to-sheet/refs/heads/main/src/static/logo.png" align="center" width="40%">
 </p>
-<p align="center"><h1 align="center">PDF to Sheet</h1></p>
+<p align="center"><h1 align="center"><span style="font-size: 1.5em;"><span style="color: red;">PDF</span> TO <span style="color: green;">SHEET</span></span></h1></p>
 <p align="center"><em>Converta PDFs em planilhas de forma fácil e rápida!</em></p>
 
 <p align="center">
