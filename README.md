@@ -14,7 +14,7 @@
 ## Índice
 
 - [Visão Geral](#🔮-visão-geral)
-- [Demonstração](#🔮-visão-geral)
+- [Demonstração](#🎥-demonstração)
 - [Funcionalidades](#☄️-funcionalidades)
 - [Começando](#🛸-começando)
   - [Pré-requisitos](#📋-pré-requisitos)
@@ -31,6 +31,12 @@
 
 O **PDF to Sheet** simplifica a conversão de relatorios PDF (Xpert) para formatos de planilha de forma fácil. Sua interface amigável permite o upload e processamento sem complicações, gerando saídas estruturadas para fácil manipulação dos dados. Ideal para profissionais que lidam com tarefas manuais de extração de dados, este projeto agiliza o processo de conversão, aumentando a produtividade e eficiência.
 
+---
+## 🎥 Demonstração
+
+Veja abaixo uma demonstração do projeto em ação:
+
+![Demonstração do Projeto](./.github/demo.gif)
 ---
 
 ## ☄️ Funcionalidades
